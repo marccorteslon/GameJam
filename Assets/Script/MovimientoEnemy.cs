@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyFollow : MonoBehaviour
+public class MovimientoEnemy : MonoBehaviour
 {
     public Transform player; // Referencia al jugador
     public float speed = 2f; // Velocidad de movimiento del enemigo
