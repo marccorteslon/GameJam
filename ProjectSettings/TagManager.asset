@@ -6,6 +6,8 @@ TagManager:
   tags:
   - pared
   - Recarga
+  - BalaPlayer
+  - BalaEnemy
   layers:
   - Default
   - TransparentFX

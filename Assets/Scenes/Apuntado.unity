@@ -1458,7 +1458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82bfbc369a1877a4cb2dd427b31ae379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 1816962415631317666, guid: cac17470e849fa445a629eeacc8d221d, type: 3}
+  projectilePrefab: {fileID: 1816962415631317666, guid: 5ccf4dd97d597b5468a188c4671357c9, type: 3}
   target: {fileID: 1009286644}
   shootingForce: 10
   fireRate: 1
@@ -1482,6 +1482,18 @@ MonoBehaviour:
   accelerationRate: 0.15
   mainCamera: {fileID: 1877662961}
   spawnOutsideMargin: 5
+--- !u!114 &1590227104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590227091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4598a6bd845ddb64596dbef66992c4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1748945129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1560,6 +1572,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 823353525968451902, guid: 88ab16f76cf316149aa78e79da1041d5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1590227098}
+    - targetCorrespondingSourceObject: {fileID: 823353525968451902, guid: 88ab16f76cf316149aa78e79da1041d5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1590227104}
   m_SourcePrefab: {fileID: 100100000, guid: 88ab16f76cf316149aa78e79da1041d5, type: 3}
 --- !u!1 &1877662959
 GameObject:
