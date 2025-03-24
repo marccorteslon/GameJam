@@ -6,9 +6,6 @@ public class EnemyFollow : MonoBehaviour
     public float speed = 2f; // Velocidad de movimiento del enemigo
     private float originalSpeed;
 
-    private bool isStunned = false;
-    private float stunDuration = 0f;
-
     private void Start()
     {
         originalSpeed = speed; // Guardamos la velocidad original
@@ -16,17 +13,6 @@ public class EnemyFollow : MonoBehaviour
 
     private void Update()
     {
-        if (isStunned)
-        {
-            stunDuration -= Time.deltaTime;
-            if (stunDuration <= 0)
-            {
-                isStunned = false;
-                speed = originalSpeed;
-            }
-            return; // No se mueve mientras está aturdido
-        }
-
         // Comprueba que el jugador está asignado
         if (player != null)
         {
@@ -45,14 +31,6 @@ public class EnemyFollow : MonoBehaviour
         {
             speed = originalSpeed * 0.5f; // Reduce la velocidad a la mitad
         }
-
-        // Aturdimiento
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Stunned"))
-        {
-            isStunned = true;
-            stunDuration = 2f; // Duración del aturdimiento (2 segundos)
-            speed = 0f; // Detiene al enemigo
-        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -64,5 +42,3 @@ public class EnemyFollow : MonoBehaviour
         }
     }
 }
-
-

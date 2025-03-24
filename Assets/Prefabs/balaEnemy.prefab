@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7540477458393187537}
   - component: {fileID: 8737581401684737059}
   - component: {fileID: 9063038795040042601}
+  - component: {fileID: -1688529238857285974}
   m_Layer: 0
   m_Name: balaEnemy
   m_TagString: BalaEnemy
@@ -158,3 +159,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8, y: 16}
   m_EdgeRadius: 0
+--- !u!114 &-1688529238857285974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816962415631317666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c87b8ea2078a943b7755630e1a95e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
