@@ -5,22 +5,23 @@ public class EnemyFollow : MonoBehaviour
     public Transform player; // Referencia al jugador
     public float speed = 2f; // Velocidad de movimiento del enemigo
     private float originalSpeed;
+    private Rigidbody2D rb;
 
     private void Start()
     {
-        originalSpeed = speed; // Guardamos la velocidad original
+        rb = GetComponent<Rigidbody2D>(); // Obtiene el Rigidbody2D
+        originalSpeed = speed; // Guarda la velocidad original
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        // Comprueba que el jugador está asignado
         if (player != null)
         {
             // Calcula la dirección hacia el jugador
-            Vector3 direction = (player.position - transform.position).normalized;
+            Vector2 direction = (player.position - transform.position).normalized;
 
-            // Mueve al enemigo hacia el jugador sin necesidad de rotarlo
-            transform.position += direction * speed * Time.deltaTime;
+            // Aplica la velocidad usando física
+            rb.velocity = direction * speed;
         }
     }
 

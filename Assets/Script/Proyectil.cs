@@ -7,7 +7,7 @@ public class Proyectil : MonoBehaviour
     public float velocidadBala = 11f;
     public float tiempoEntreDisparos = 0.5f;
     float balaOffsetX = 0f;
-    float balaOffsetY = 0.53f;
+    float balaOffsetY = 1.53f;
     public int powerup = 0;
     public int vidaDisparo = 3;
     private float nextShootTime = 0f;
