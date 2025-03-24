@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7540477458393187537}
   - component: {fileID: 8737581401684737059}
   - component: {fileID: 9063038795040042601}
+  - component: {fileID: 2462728541235551525}
   m_Layer: 0
-  m_Name: bala
-  m_TagString: Untagged
+  m_Name: BalaJugador
+  m_TagString: BalaJugador
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: b223a28107d5d994bb0ca64b2e08ee17, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.33648136, g: 0.7735849, b: 0.25907797, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -158,3 +159,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8, y: 16}
   m_EdgeRadius: 0
+--- !u!114 &2462728541235551525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816962415631317666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d686e15a5cd1a46a33494e5dfcb28b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
