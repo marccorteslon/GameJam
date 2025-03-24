@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NaveDisparoScr : MonoBehaviour
+public class Proyectil : MonoBehaviour
 {
     public GameObject bala;
     public float velocidadBala = 11f;
