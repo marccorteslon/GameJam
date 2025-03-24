@@ -9,12 +9,12 @@ public class Proyectil : MonoBehaviour
     float balaOffsetX = 0f;
     float balaOffsetY = 0.53f;
     public int powerup = 0;
-    public int vidaDisparo = 10;
+    public int vidaDisparo = 3;
     private float nextShootTime = 0f;
 
     // Variable para contar las balas disparadas
-    private int contadorBalas = 10; // Contador inicial de balas (para debug, se puede ajustar)
-    public int maxBalas = 10; // Máximo de balas que puedes disparar (para debug)
+    private int contadorBalas = 3; // Contador inicial de balas (para debug, se puede ajustar)
+    public int maxBalas = 3; // Máximo de balas que puedes disparar (para debug)
 
     // Referencia al texto de UI para mostrar el contador de balas usando TextMesh Pro
     public TextMeshProUGUI contadorText;
@@ -59,10 +59,22 @@ public class Proyectil : MonoBehaviour
         }
     }
 
-    // Método para recargar las balas, al recogerlas del suelo
+    // Método para recargar las balas, puedes llamarlo cuando quieras (por ejemplo, con un power-up)
     public void RecargarBalas()
     {
         contadorBalas = maxBalas; // Resetea el contador de balas
         Debug.Log("Balas recargadas.");
+    }
+
+    // Detecta la colisión con un objeto específico y recarga las balas sumando 10
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // Aquí, verificamos si el objeto con el que colisionamos tiene la etiqueta "Recarga"
+        if (other.CompareTag("Recarga"))
+        {
+            contadorBalas += 10; // Suma 10 balas al contador
+            Debug.Log("¡Colisión con objeto de recarga! Balas ahora: " + contadorBalas);
+            Destroy(other.gameObject); // Destruye el objeto con el que se ha colisionado (por ejemplo, un power-up)
+        }
     }
 }
