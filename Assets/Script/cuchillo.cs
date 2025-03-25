@@ -1,10 +1,12 @@
 using UnityEngine;
+using System.Collections;
 
 public class ToggleCuchillo : MonoBehaviour
 {
     private Renderer cuchilloRenderer;
     private Collider cuchilloCollider;
     private bool isVisible = false; // El cuchillo empieza invisible
+    public float tiempoVisible = 0.5f; // Tiempo que el cuchillo estará activo
 
     void Start()
     {
@@ -26,14 +28,15 @@ public class ToggleCuchillo : MonoBehaviour
         // Detecta el clic derecho (botón secundario del ratón)
         if (Input.GetMouseButtonDown(1)) // 1 es el botón derecho del mouse
         {
-            ToggleVisibility();
+            StartCoroutine(ShowCuchilloTemporarily());
         }
     }
 
-    void ToggleVisibility()
+    IEnumerator ShowCuchilloTemporarily()
     {
-        isVisible = !isVisible; // Alterna entre visible/invisible
-        SetVisibility(isVisible);
+        SetVisibility(true); // Mostrar el cuchillo
+        yield return new WaitForSeconds(tiempoVisible); // Esperar el tiempo definido
+        SetVisibility(false); // Ocultar el cuchillo
     }
 
     void SetVisibility(bool state)
