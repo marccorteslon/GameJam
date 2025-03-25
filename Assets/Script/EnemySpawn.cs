@@ -10,21 +10,35 @@ public class EnemySpawner : MonoBehaviour
 
     public Transform player; // Referencia al jugador
     public float spawnRadius = 20f; // Radio en el que aparecerán los enemigos fuera del mapa
-    public float initialSpawnInterval = 5f; // Intervalo inicial entre apariciones (en segundos)
-    public float minSpawnInterval = 0.5f; // Tiempo mínimo entre spawns (evita que sea demasiado rápido)
-    public float accelerationRate = 0.95f; // Factor de reducción del tiempo de spawn
-    public int minGroupSize = 2; // Tamaño mínimo del grupo de enemigos
-    public int maxGroupSize = 5; // Tamaño máximo del grupo de enemigos
+    public float initialSpawnInterval = 15f; // Intervalo inicial entre apariciones (en segundos) (más largo)
+    public float minSpawnInterval = 3f; // Tiempo mínimo entre spawns (más largo para menos enemigos)
+    public float accelerationRate = 0.99f; // Factor de reducción del tiempo de spawn (más lento)
+    public int minGroupSize = 1; // Tamaño mínimo del grupo de enemigos (1 enemigo por spawn)
+    public int maxGroupSize = 2; // Tamaño máximo del grupo de enemigos (solo 2 enemigos por spawn)
     public Camera mainCamera; // Referencia a la cámara principal
     public float spawnOutsideMargin = 5f; // Margen para asegurar que los enemigos aparecen fuera de la cámara
 
     private float currentSpawnInterval; // Intervalo actual entre spawns
     private float spawnTimer; // Temporizador para controlar el spawn
+    private Vector3[] spawnPattern; // Patrón de posiciones de spawn predefinido
+    private int spawnPatternIndex; // Índice del patrón de spawn actual
 
     private void Start()
     {
         currentSpawnInterval = initialSpawnInterval;
         spawnTimer = currentSpawnInterval;
+
+        // Definir un patrón de spawn con posiciones fijas
+        spawnPattern = new Vector3[]
+        {
+            new Vector3(10, 10, 0),
+            new Vector3(-10, 10, 0),
+            new Vector3(10, -10, 0),
+            new Vector3(-10, -10, 0),
+            new Vector3(0, 15, 0),
+            new Vector3(0, -15, 0)
+        };
+        spawnPatternIndex = 0;
     }
 
     private void Update()
@@ -42,19 +56,19 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnEnemyGroup()
     {
         int groupSize = Random.Range(minGroupSize, maxGroupSize + 1);
-        Vector3 baseSpawnPosition = GetSpawnPositionOutsideCamera();
+        Vector3 spawnPosition = GetNextSpawnPosition();
 
         for (int i = 0; i < groupSize; i++)
         {
             Vector3 spawnOffset = new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f), 0);
-            Vector3 spawnPosition = baseSpawnPosition + spawnOffset;
+            Vector3 finalSpawnPosition = spawnPosition + spawnOffset;
 
             float rand = Random.value;
 
             GameObject enemyPrefab = rand < 0.7f ? enemyPrefab1 :
                                      rand < 0.87f ? enemyPrefab2 :
                                      rand < 0.97f ? enemyPrefab3 : enemyPrefab4; // 70% para enemigo 1, 17% para enemigo 2, 10% para enemigo 3, 3% para enemigo 4
-            GameObject enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+            GameObject enemy = Instantiate(enemyPrefab, finalSpawnPosition, Quaternion.identity);
 
             EnemyFollow enemyScript = enemy.GetComponent<EnemyFollow>();
             if (enemyScript != null && player != null)
@@ -64,22 +78,11 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    private Vector3 GetSpawnPositionOutsideCamera()
+    private Vector3 GetNextSpawnPosition()
     {
-        Vector3 spawnPosition;
-        do
-        {
-            Vector2 randomPosition = Random.insideUnitCircle.normalized * spawnRadius;
-            spawnPosition = new Vector3(randomPosition.x + player.position.x, randomPosition.y + player.position.y, 0);
-        }
-        while (IsPositionInCameraView(spawnPosition));
-
+        // Usar el siguiente punto del patrón de spawn y luego incrementar el índice
+        Vector3 spawnPosition = spawnPattern[spawnPatternIndex];
+        spawnPatternIndex = (spawnPatternIndex + 1) % spawnPattern.Length; // Asegura que el índice nunca se salga del arreglo
         return spawnPosition;
-    }
-
-    private bool IsPositionInCameraView(Vector3 position)
-    {
-        Vector3 viewportPoint = mainCamera.WorldToViewportPoint(position);
-        return viewportPoint.x > 0 && viewportPoint.x < 1 && viewportPoint.y > 0 && viewportPoint.y < 1;
     }
 }

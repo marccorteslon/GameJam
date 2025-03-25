@@ -1144,8 +1144,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862198694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 1.975, z: 0}
-  m_LocalScale: {x: 0.5839, y: 2.235846, z: 1}
+  m_LocalPosition: {x: 0.02, y: 2.14063, z: 0}
+  m_LocalScale: {x: 0.5839, y: 1.9045831, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1009286644}
@@ -2596,14 +2596,14 @@ MonoBehaviour:
   enemyPrefab3: {fileID: 0}
   enemyPrefab4: {fileID: 0}
   player: {fileID: 1009286644}
-  spawnRadius: 20
+  spawnRadius: 17
   initialSpawnInterval: 5
-  minSpawnInterval: 0.5
-  accelerationRate: 0.15
-  minGroupSize: 2
-  maxGroupSize: 5
+  minSpawnInterval: 3
+  accelerationRate: 0.99
+  minGroupSize: 1
+  maxGroupSize: 2
   mainCamera: {fileID: 1877662961}
-  spawnOutsideMargin: 3
+  spawnOutsideMargin: 5
 --- !u!4 &2119953862
 Transform:
   m_ObjectHideFlags: 0
