@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,7 +134,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Terrorist disparo pistola-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 25
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417d55c89c30fe94db414b4979275bcc
+      internalID: 291144403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist disparo pistola-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 25
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921e684c05010a94fa57e9aac27691af
+      internalID: 1306495098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist disparo pistola-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 24
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acbb4896462dc24fa50be2ec332fc0a
+      internalID: 1557570097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist disparo pistola-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 25
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7216a893439914c47b5261b50ae49657
+      internalID: -1532027644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist disparo pistola-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 25
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea185b3c4c8300048bd896ee3b51600c
+      internalID: -825367911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist disparo pistola-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 25
+        width: 38
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5e5d85a8ef91e489da79e9dc1f293b
+      internalID: -2083925023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist disparo pistola-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 23
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba43e68f39ea2ce4f88d29a464eda148
+      internalID: -1989857055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist disparo pistola-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 23
+        width: 39
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a39543c2e22ebf948934929238b968c3
+      internalID: -1859204441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist disparo pistola-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 23
+        width: 36
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf5358bbc383e5488e1d0cf052b1d9d
+      internalID: -1255327558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +334,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Terrorist disparo pistola-Sheet_0: 291144403
+      Terrorist disparo pistola-Sheet_1: 1306495098
+      Terrorist disparo pistola-Sheet_2: 1557570097
+      Terrorist disparo pistola-Sheet_3: -1532027644
+      Terrorist disparo pistola-Sheet_4: -825367911
+      Terrorist disparo pistola-Sheet_5: -2083925023
+      Terrorist disparo pistola-Sheet_6: -1989857055
+      Terrorist disparo pistola-Sheet_7: -1859204441
+      Terrorist disparo pistola-Sheet_8: -1255327558
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
