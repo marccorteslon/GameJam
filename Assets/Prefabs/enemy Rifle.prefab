@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6081727453509704956}
   - component: {fileID: 5153887727864243533}
   m_Layer: 0
-  m_Name: enemy 3
+  m_Name: enemy Rifle
   m_TagString: BalaEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38,7 +38,7 @@ Transform:
   m_Children:
   - {fileID: 9076118403044322218}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
 --- !u!212 &1912312853009679719
 SpriteRenderer:
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.32, y: 0.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 1816962415631317666, guid: 5ccf4dd97d597b5468a188c4671357c9, type: 3}
   target: {fileID: 0}
   shootingForce: 10
-  fireRate: 1
+  fireRate: 0.5
   spawnOffset: 0.5
 --- !u!114 &5275325763965557557
 MonoBehaviour:
@@ -215,7 +215,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4993823958064220850}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 654b5e2eaa85c2c4a825d9245ef9c76e, type: 2}
   m_CullingMode: 0

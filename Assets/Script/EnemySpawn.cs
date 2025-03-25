@@ -3,10 +3,9 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [Header("Spawner Settings")]
-    public GameObject enemyPrefab1; // Prefab del enemigo común (90%)
-    public GameObject enemyPrefab2; // Prefab del enemigo raro (10%)
-    public GameObject enemyPrefab3; // Prefab del enemigo raro (10%)
-    public GameObject enemyPrefab4; // Prefab del enemigo raro (10%)
+    public GameObject enemyPrefab1; // Prefab del enemigo rifle
+    public GameObject enemyPrefab2; // Prefab del enemigo escopeta
+    public GameObject enemyPrefab3; // Prefab del enemigo pistola
 
     public Transform player; // Referencia al jugador
     public float spawnRadius = 20f; // Radio en el que aparecerán los enemigos fuera del mapa
@@ -65,9 +64,8 @@ public class EnemySpawner : MonoBehaviour
 
             float rand = Random.value;
 
-            GameObject enemyPrefab = rand < 0.7f ? enemyPrefab1 :
-                                     rand < 0.87f ? enemyPrefab2 :
-                                     rand < 0.97f ? enemyPrefab3 : enemyPrefab4; // 70% para enemigo 1, 17% para enemigo 2, 10% para enemigo 3, 3% para enemigo 4
+            GameObject enemyPrefab = rand < 0.3f ? enemyPrefab1 :
+                                     rand < 0.6f ? enemyPrefab2 : enemyPrefab3; // Probabilidades
             GameObject enemy = Instantiate(enemyPrefab, finalSpawnPosition, Quaternion.identity);
 
             // Asigna el jugador como objetivo del disparo
