@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 40e131e8e0ee0334dbb7e76891222f77
+guid: 8eb70f20a8a4bbf48a39c2527f5418fe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,133 +134,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Cuchillo-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 26
-        y: 21
-        width: 35
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 638b15f435c1ddd4d80e05c70982fdd5
-      internalID: -1981468508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cuchillo-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 18
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc4116a6164889144ae4b7b985d35b23
-      internalID: -1676276066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cuchillo-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 156
-        y: 11
-        width: 24
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d78d2efe29a37fd438ef24d5c7ff833c
-      internalID: 2131501600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cuchillo-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 220
-        y: 1
-        width: 20
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f7de1c4ad5bd3540af0c39896ccc64a
-      internalID: -1703530658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cuchillo-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 281
-        y: 3
-        width: 17
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e8fa1cb6c3458841985f81ecf97486d
-      internalID: -300539180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cuchillo-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 21
-        width: 35
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 136c8399123dced4cb35db5ffbed4082
-      internalID: 24038895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -271,13 +145,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Cuchillo-Sheet_0: -1981468508
-      Cuchillo-Sheet_1: -1676276066
-      Cuchillo-Sheet_2: 2131501600
-      Cuchillo-Sheet_3: -1703530658
-      Cuchillo-Sheet_4: -300539180
-      Cuchillo-Sheet_5: 24038895
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
