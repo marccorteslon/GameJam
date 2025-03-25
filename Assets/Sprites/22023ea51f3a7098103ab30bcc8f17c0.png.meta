@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9d06fcabf0e23c54596eb92043db3a26
+guid: 1e261651f7916304fbfde573fdc5c845
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,91 +134,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Terrorist disparo ak -Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 19
-        y: 17
-        width: 30
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6655bb79f499b5468aa420083f8eb5b
-      internalID: 201763773
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrorist disparo ak -Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 16
-        width: 39
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6b59c52a2dc84849984ec64772764a6
-      internalID: -1157433039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrorist disparo ak -Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 16
-        width: 36
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef96520e4c6e03d458154eab9fbab911
-      internalID: 761442634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Terrorist disparo ak -Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 212
-        y: 16
-        width: 30
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e80351f3be8f14a4c95cc3bf26634ac2
-      internalID: -875210237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -229,11 +145,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Terrorist disparo ak -Sheet_0: 201763773
-      Terrorist disparo ak -Sheet_1: -1157433039
-      Terrorist disparo ak -Sheet_2: 761442634
-      Terrorist disparo ak -Sheet_3: -875210237
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

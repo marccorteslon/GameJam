@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,7 +134,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Terrorist 2 -Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 19
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd67f1e7906f43049a8ea85b93bd5d70
+      internalID: 818487100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist 2 -Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 19
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc63be5bab98b24ab067c345fee0130
+      internalID: -1890351778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist 2 -Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 21
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff39136f32d5dd43bb85a826ee71d8d
+      internalID: 451596135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist 2 -Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 20
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf353bedf35a77040a3de3518981dc72
+      internalID: 1739892499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist 2 -Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 21
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0870db65165c44ab5070a0a4e6ec56
+      internalID: 1805411100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist 2 -Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 20
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 317d9662fca6bf648bd1bc2741188bf9
+      internalID: -1694311308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrorist 2 -Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 21
+        width: 32
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4403ae50eb49b1b4bb7b17b17fcfac5b
+      internalID: -1763250222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +292,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Terrorist 2 -Sheet_0: 818487100
+      Terrorist 2 -Sheet_1: -1890351778
+      Terrorist 2 -Sheet_2: 451596135
+      Terrorist 2 -Sheet_3: 1739892499
+      Terrorist 2 -Sheet_4: 1805411100
+      Terrorist 2 -Sheet_5: -1694311308
+      Terrorist 2 -Sheet_6: -1763250222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
