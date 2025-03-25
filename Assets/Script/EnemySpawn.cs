@@ -70,10 +70,17 @@ public class EnemySpawner : MonoBehaviour
                                      rand < 0.97f ? enemyPrefab3 : enemyPrefab4; // 70% para enemigo 1, 17% para enemigo 2, 10% para enemigo 3, 3% para enemigo 4
             GameObject enemy = Instantiate(enemyPrefab, finalSpawnPosition, Quaternion.identity);
 
+            // Asigna el jugador como objetivo del disparo
+            DisparoEnemy shooterScript = enemy.GetComponent<DisparoEnemy>();
+            if (shooterScript != null && player != null)
+            {
+                shooterScript.target = player; // Asigna el jugador como objetivo del disparo
+            }
+
             EnemyFollow enemyScript = enemy.GetComponent<EnemyFollow>();
             if (enemyScript != null && player != null)
             {
-                enemyScript.player = player; // Asigna el jugador como objetivo
+                enemyScript.player = player; // Asigna el jugador como objetivo para seguir
             }
         }
     }
