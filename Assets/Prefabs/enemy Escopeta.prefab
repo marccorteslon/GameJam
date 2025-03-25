@@ -96,7 +96,6 @@ GameObject:
   - component: {fileID: 4697100966116992124}
   - component: {fileID: 7611586934678257133}
   - component: {fileID: 8919520115380406536}
-  - component: {fileID: 2012354852485714642}
   - component: {fileID: 4298182340393749700}
   - component: {fileID: 8425589691427934199}
   - component: {fileID: 4225967656249780888}
@@ -249,23 +248,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2012354852485714642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8281122111682650936}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82bfbc369a1877a4cb2dd427b31ae379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 1816962415631317666, guid: 5ccf4dd97d597b5468a188c4671357c9, type: 3}
-  target: {fileID: 0}
-  shootingForce: 10
-  fireRate: 1
-  spawnOffset: 0.5
 --- !u!114 &4298182340393749700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,7 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1816962415631317666, guid: 5ccf4dd97d597b5468a188c4671357c9, type: 3}
-  target: {fileID: 0}
+  target: {fileID: 2422632009656788226, guid: 5ccf4dd97d597b5468a188c4671357c9, type: 3}
   shootingForce: 10
   fireRate: 1
   spawnOffset: 0.5
