@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Shooter : MonoBehaviour
+public class DisperoEnenmy : MonoBehaviour
 {
     public GameObject projectilePrefab;  // Prefab del proyectil
     public Transform target;             // Objetivo hacia donde se dispara el proyectil

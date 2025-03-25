@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DestruirAlColisionar : MonoBehaviour
+public class BalaEnemy : MonoBehaviour
 {
     // Método que se llama cuando ocurre una colisión con otro objeto
     private void OnCollisionEnter2D(Collision2D collision)
