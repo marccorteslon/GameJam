@@ -11,10 +11,12 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     private bool isDashing = false;
     private float lastDashTime;
+    private Animator animator; // Referencia al Animator
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>(); // Obtiene el Rigidbody2D
+        animator = GetComponent<Animator>(); // Obtiene el Animator
     }
 
     private void Update()
@@ -36,6 +38,9 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
+
+        // Actualiza el Animator con el movimiento
+        animator.SetFloat("Speed", movement.magnitude);
     }
 
     private void FixedUpdate()
@@ -49,12 +54,14 @@ public class PlayerMovement : MonoBehaviour
     private System.Collections.IEnumerator Dash()
     {
         isDashing = true;
+        animator.SetBool("isDashing", true); // Activa la animación
         rb.velocity = movement * dashSpeed;
         lastDashTime = Time.time;
 
         yield return new WaitForSeconds(dashDuration);
 
         isDashing = false;
+        animator.SetBool("isDashing", false); // Desactiva la animación
         rb.velocity = movement * speed; // Restablece la velocidad normal
     }
 }
