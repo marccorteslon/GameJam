@@ -16,5 +16,15 @@ public class EnemyDeath : MonoBehaviour
             Destroy(gameObject); // Destruye al enemigo
             Destroy(collision.gameObject); // Destruye la bala
         }
-    }
+
+        if (collision.gameObject.CompareTag("cuchillo"))
+        {
+            if (replacementPrefab != null)
+            {
+                Instantiate(replacementPrefab, transform.position, Quaternion.identity);
+            }
+
+            Destroy(gameObject); // Destruye al enemigo
+        }
+}
 }
